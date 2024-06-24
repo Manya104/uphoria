@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Sounds Mixer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="container">
+            <h1 class="title">EUPHORIA</h1>
+            <p class="description">Create your perfect ambiance.</p>
+        <div class="sound-controls">
+            <div class="sound">
+                <img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Waterfall">
+                <label for="waterfall">Waterfall</label>
+                <input  console.log type="range" id="waterfall" min="0" max="1" step="0.01">
+                <button id="waterfall-btn"><img src="/assets/play.png" alt="Play" class="play-btn"></button>
+                <audio id="waterfall-audio" loop>
+                    <source src="/assets/waterfall.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="sound">
+                <img src="https://images.unsplash.com/photo-1549608276-5786777e6587?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Birds">
+                <label for="birds">Birds</label>
+                <input type="range" id="birds" min="0" max="1" step="0.01">
+                <button id="birds-btn"><img src="./assets/play.png" alt="Play" class="play-btn"></button>
+                <audio id="birds-audio" loop>
+                    <source src="./assets/birds.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="sound">
+                <img src="https://images.unsplash.com/photo-1503785640985-f62e3aeee448?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Trees">
+                <label for="trees">Trees</label>
+                <input type="range" id="trees" min="0" max="1" step="0.01">
+                <button id="trees-btn"><img src="./assets/play.png" alt="Play" class="play-btn"></button>
+                <audio id="trees-audio" loop>
+                    <source src="./assets/trees.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="sound">
+                <img src="https://images.unsplash.com/photo-1501691223387-dd0500403074?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmFpbnxlbnwwfHwwfHx8MA%3D%3D"
+                    alt="Rain">
+                <label for="rain">Rain</label>
+                <input type="range" id="rain" min="0" max="1" step="0.01">
+                <button id="rain-btn"><img src="./assets/play.png" alt="Play" class="play-btn"></button>
+                <audio id="rain-audio" loop>
+                    <source src="./assets/rain.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="sound">
+                <img src="https://images.unsplash.com/photo-1533985062386-ef0837f31bc0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2luZHxlbnwwfHwwfHx8MA%3D%3D"
+                    alt="Wind">
+                <label for="wind">Wind</label>
+                <input type="range" id="wind" min="0" max="1" step="0.01">
+                <button id="wind-btn"><img src="./assets/play.png" alt="Play" class="play-btn"></button>
+                <audio id="wind-audio" loop>
+                    <source src="./assets/wind.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="sound">
+                <img src="https://images.unsplash.com/photo-1551234250-d88208c2ce14?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHRodW5kZXJ8ZW58MHx8MHx8fDA%3D"
+                    alt="Thunder">
+                <label for="thunder">Thunder</label>
+                <input type="range" id="thunder" min="0" max="1" step="0.01">
+                <button id="thunder-btn"><img src="./assets/play.png" alt="Play" class="play-btn"></button>
+                <audio id="thunder-audio" loop>
+                    <source src="./assets/thunder.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="sound">
+                <img src="https://images.unsplash.com/photo-1439405326854-014607f694d7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8b2NlYW58ZW58MHx8MHx8fDA%3D"
+                    alt="Ocean Waves">
+                <label for="ocean">Ocean Waves</label>
+                <input type="range" id="ocean" min="0" max="1" step="0.01">
+                <button id="ocean-btn"><img src="./assets/play.png" alt="Play" class="play-btn"></button>
+                <audio id="ocean-audio" loop>
+                    <source src="./assets/ocean.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="sound">
+                <img src="https://images.unsplash.com/photo-1577710999486-67cd7dc3da74?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y3JpY2tldHN8ZW58MHx8MHx8fDA%3D"
+                    alt="Crickets">
+                <label for="crickets">Crickets</label>
+                <input type="range" id="crickets" min="0" max="1" step="0.01">
+                <button id="crickets-btn"><img src="./assets/play.png" alt="Play" class="play-btn"></button>
+                <audio id="crickets-audio" loop>
+                    <source src="./assets/crickets.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="sound">
+                <img src="https://images.unsplash.com/photo-1486915309851-b0cc1f8a0084?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2FtcGZpcmV8ZW58MHx8MHx8fDA%3D"
+                    alt="Campfire">
+                <label for="campfire">Campfire</label>
+                <input type="range" id="campfire" min="0" max="1" step="0.01">
+                <button id="campfire-btn"><img src="./assets/play.png" alt="Play" class="play-btn"></button>
+                <audio id="campfire-audio" loop>
+                    <source src="./assets/campfire.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="sound">
+                <img src="https://images.unsplash.com/photo-1455577380025-4321f1e1dca7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cml2ZXJ8ZW58MHx8MHx8fDA%3D"
+                    alt="River">
+                <label for="river">River</label>
+                <input type="range" id="river" min="0" max="1" step="0.01">
+                <button id="river-btn"><img src="./assets/play.png" alt="Play" class="play-btn"></button>
+                <audio id="river-audio" loop>
+                    <source src="./assets/river.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="sound">
+                <img src="https://images.unsplash.com/photo-1502490148876-37cf15671d21?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHRyZWUlMjBmcm9nfGVufDB8fDB8fHww"
+                    alt="Frogs">
+                <label for="treefrogs">Frogs</label>
+                <input type="range" id="treefrogs" min="0" max="1" step="0.01">
+                <button id="treefrogs-btn"><img src="./assets/play.png" alt="Play" class="play-btn"></button>
+                <audio id="treefrogs-audio" loop>
+                    <source src="./assets/treefrogs.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="sound">
+                <img src="https://plus.unsplash.com/premium_photo-1668136403317-1230640e4b9f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Leaves Rustling">
+                <label for="leaves">Leaves Rustling</label>
+                <input type="range" id="leaves" min="0" max="1" step="0.01">
+                <button id="leaves-btn"><img src="./assets/play.png" alt="Play" class="play-btn"></button>
+                <audio id="leaves-audio" loop>
+                    <source src="./assets/leaves.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="sound">
+                <img src="https://images.unsplash.com/photo-1527842891421-42eec6e703ea?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9vbnxlbnwwfHwwfHx8MA%3D%3D"
+                    alt="Night">
+                <label for="night">Night</label>
+                <input type="range" id="night" min="0" max="1" step="0.01">
+                <button id="night-btn"><img src="./assets/play.png" alt="Play" class="play-btn"></button>
+                <audio id="night-audio" loop>
+                    <source src="./assets/night.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="sound">
+                <img src="https://images.unsplash.com/photo-1594728613852-cac78bd0daba?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3RyZWFtfGVufDB8fDB8fHww"
+                    alt="Stream">
+                <label for="stream">Strteam</label>
+                <input type="range" id="stream" min="0" max="1" step="0.01">
+                <button id="stream-btn"><img src="./assets/play.png" alt="Play" class="play-btn"></button>
+                <audio id="stream-audio" loop>
+                    <source src="./assets/stream.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="sound">
+                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D"
+                    alt="Nature bliss">
+                <label for="naturebliss">Nature bliss</label>
+                <input type="range" id="naturebliss" min="0" max="1" step="0.01">
+                <button id="naturebliss-btn"><img src="./assets/play.png" alt="Play" class="play-btn"></button>
+                <audio id="naturebliss-audio" loop>
+                    <source src="./assets/naturebliss.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

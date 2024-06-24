@@ -1,0 +1,221 @@
+/* styles.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://images.unsplash.com/photo-1627133833133-adbd0b0e0e50?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fG5hdHVyZSUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D');
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 900px;
+    box-shadow: 0 4px 8px rgba(246, 245, 245, 0.995);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sound-controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.sound {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(67, 225, 255, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
+    border-style: groove;
+    border-color: #f2ffff;
+}
+
+.sound img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+label {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 8px;
+    background: #f4d5d5;
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    width: 100%;
+}
+
+input[type="range"]:hover {
+    opacity: 1;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #4CAF50;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background: #59d25d;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button img.play-btn {
+    width: 30px;
+    height: 30px;
+}
+
+button img.pause-btn {
+    width: 30px;
+    height: 30px;
+}
+
+/* Reset default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Set up basic styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #bbf3a3;
+    color: #f2ffff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px; /* Adjust max-width as needed */
+    margin: 0 auto;
+    padding: 20px;
+    overflow-y: auto; /* Ensures the container is scrollable if content overflows */
+    height: 100vh; /* Makes the container take the full height of the viewport */
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+/* Flexbox for sound controls */
+.sound-controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.sound {
+    width: 200px; /* Adjust width of each sound control */
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .sound {
+        width: 45%; /* Adjust width for smaller screens */
+    }
+}
+
+/* Styles for buttons and images */
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+button img.play-icon {
+    width: 30px;
+    height: 30px;
+}
+
+button img.pause-icon {
+    display: none; /* Initially hide the pause button */
+}
+
+/* Scrollbar styling (optional) */
+body::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background of the scrollbar track */
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #010d13; /* Color of the scrollbar thumb when hovered */
+}
+.title {
+    font-family: 'Anton', cursive;
+    font-size: 3em;
+    color: #f8fdff;
+}
+.description {
+    font-family: 'Pacifico', cursive;
+    font-size: 2em;
+    color: #c0fcc6;
+    margin-bottom: 20px;
+}
+
+
+
